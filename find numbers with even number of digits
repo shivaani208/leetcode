@@ -1,0 +1,23 @@
+class Solution 
+{
+    public int findNumbers(int[] nums) 
+    {
+        int total=0;
+        for (int c:nums) 
+        {
+            int sum=0;
+            while(c>0) 
+            {
+                sum=sum+1;
+                c=c/10;
+            }
+        if(sum%2==0) 
+        {
+            total=total+1;
+        }   
+
+        }
+        return total;
+        
+    }
+}
